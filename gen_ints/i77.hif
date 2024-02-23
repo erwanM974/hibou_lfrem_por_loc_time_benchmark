@@ -1,0 +1,50 @@
+loopW(
+	alt(
+		seq(
+			loopW(
+				seq(
+					l2 -- m4 ->|,
+					loopW(
+						l3 -- m3 ->|
+					)
+				)
+			),
+			alt(
+				seq(
+					l1 -- m3 ->|,
+					l3 -- m5 ->|,
+					m2 -> l3
+				),
+				seq(
+					loopW(
+						m1 -> l5
+					),
+					alt(
+						l5 -- m5 ->|,
+						m2 -> l5
+					)
+				)
+			)
+		),
+		loopW(
+			seq(
+				strict(
+					m4 -> l4,
+					l1 -- m4 ->|
+				),
+				strict(
+					l5 -- m1 ->|,
+					l2 -- m1 ->|
+				),
+				strict(
+					seq(
+						l3 -- m1 ->|,
+						m6 -> l1
+					),
+					m2 -> l3,
+					m2 -> l1
+				)
+			)
+		)
+	)
+)

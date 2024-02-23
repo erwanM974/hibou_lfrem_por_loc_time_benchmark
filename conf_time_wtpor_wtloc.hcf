@@ -1,0 +1,8 @@
+@analyze_option{
+    strategy = DFS;
+    goal = WeakPass;
+    analysis_kind = eliminate;
+    local_analysis = [select=dirty, max_look_ahead_depth=none];
+    partial_order_reduction = true;
+    memoize = true;
+}

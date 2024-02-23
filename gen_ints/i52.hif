@@ -1,0 +1,34 @@
+strict(
+	seq(
+		strict(
+			seq(
+				m2 -> l1,
+				m5 -> l4
+			),
+			seq(
+				l2 -- m3 ->|,
+				m2 -> l5
+			)
+		),
+		l5 -- m5 ->|
+	),
+	seq(
+		strict(
+			l2 -- m5 ->|,
+			m3 -> l3
+		),
+		strict(
+			m2 -> l4,
+			l5 -- m6 ->|
+		)
+	),
+	seq(
+		l1 -- m6 ->|,
+		l5 -- m5 ->|
+	),
+	seq(
+		m4 -> l1,
+		l2 -- m5 ->|
+	),
+	l1 -- m6 ->|
+)

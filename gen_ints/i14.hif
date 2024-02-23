@@ -1,0 +1,34 @@
+loopW(
+	seq(
+		strict(
+			seq(
+				strict(
+					l1 -- m5 ->|,
+					seq(
+						m6 -> l5,
+						l5 -- m1 ->|
+					)
+				),
+				l4 -- m2 ->|,
+				strict(
+					m5 -> l3,
+					m1 -> l5
+				)
+			),
+			seq(
+				m2 -> l2,
+				m4 -> l2,
+				strict(
+					m1 -> l1,
+					m6 -> l3
+				)
+			),
+			seq(
+				m1 -> l1,
+				m5 -> l1,
+				l4 -- m3 ->|
+			)
+		),
+		m5 -> l2
+	)
+)

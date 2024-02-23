@@ -1,0 +1,23 @@
+loopW(
+	seq(
+		alt(
+			l3 -- m3 ->|,
+			loopW(
+				seq(
+					m3 -> l4,
+					l5 -- m5 ->|,
+					m3 -> l3,
+					m1 -> l2
+				)
+			)
+		),
+		loopW(
+			seq(
+				m1 -> l1,
+				l1 -- m3 ->|,
+				m3 -> l2,
+				m6 -> l1
+			)
+		)
+	)
+)
